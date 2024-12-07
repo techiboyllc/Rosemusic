@@ -78,14 +78,14 @@ LOGGER = logging.getLogger("SYSTEM")
 if os.path.exists("Config.env"):
     load_dotenv("Config.env")
 
-API_ID = int(getenv("API_ID", 0))
-API_HASH = getenv("API_HASH", None)
+API_ID = int(getenv("API_ID", 23309652))
+API_HASH = getenv("API_HASH", "4b0bdb81f8878353f0f17f363accff8b")
 BOT_TOKEN = getenv("BOT_TOKEN", None)
 STRING_SESSION = getenv("STRING_SESSION", None)
 MONGO_DB_URL = getenv("MONGO_DB_URL", None)
-OWNER_ID = int(getenv("OWNER_ID", 0))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", 0))
-START_IMAGE_URL = getenv("START_IMAGE_URL", None)
+OWNER_ID = int(getenv("OWNER_ID", 878334582))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", 1522840157))
+START_IMAGE_URL = getenv("START_IMAGE_URL", "https://graph.org/file/918101d0ad6b1207e6201.png")
 
 
 # Memory Database
@@ -203,8 +203,8 @@ async def main():
         LOGGER.info(f"🚫 Assistant Error: {e}")
         sys.exit()
     try:
-        await app.join_chat("AdityaServer")
-        await app.join_chat("AdityaDiscus")
+        await app.join_chat("onlyfansvc")
+        await app.join_chat("indian_men")
     except Exception:
         pass
     if LOG_GROUP_ID != 0:
